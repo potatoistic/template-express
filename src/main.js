@@ -1,12 +1,9 @@
-import express from 'express';
+import env from './config/dotenv';
+import App from './app';
 
-const app = express();
+const app = new App();
 
-app.get('/', (req, res) => {
-  res.send({ msg: 'Hello World' });
-});
-
-app.listen(3333, () => {
+app.server.listen(env.NODE_PORT, () => {
   // eslint-disable-next-line no-console
-  console.log('Server started on port 3333');
+  console.log('[HTTP] server ready: http://localhost:3000 🚀');
 });
