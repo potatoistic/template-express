@@ -8,7 +8,7 @@ export default class AuthController {
   }
 
   login = async (req, res) => {
-    const response = this.#authService.login(req.body);
+    const response = await this.#authService.login(req.body);
     res.send({ login: response });
   };
 }
