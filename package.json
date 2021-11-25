@@ -7,7 +7,7 @@
     "dev": "nodemon",
     "start": "node dist/main.js",
     "build:prod": "babel src --out-dir dist",
-    "build": "babel src --out-dir temp",
+    "build:temp": "babel src --out-dir temp",
     "lint": "eslint -f unix \"src/**/*.{js, jsx}\"",
     "test": "mocha __test__",
     "test:coverage": "nyc mocha __test__"
@@ -38,6 +38,8 @@
     "@babel/core": "^7.16.0",
     "@babel/node": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
+    "@istanbuljs/nyc-config-babel": "^3.0.0",
+    "babel-plugin-istanbul": "^6.1.1",
     "chai": "^4.3.4",
     "cross-env": "^7.0.3",
     "eslint": "^8.3.0",
