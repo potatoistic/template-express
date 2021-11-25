@@ -1,7 +1,5 @@
 const { getBabelAlias } = require('./config');
 
-const alias = getBabelAlias();
-
 module.exports = (api) => {
   api.cache(true);
 
@@ -24,7 +22,7 @@ module.exports = (api) => {
         'module-resolver',
         {
           root: ['./src'],
-          alias,
+          alias: getBabelAlias,
         },
       ],
     ],

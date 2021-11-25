@@ -1,6 +1,5 @@
 const { getEslintAlias } = require('./config');
 
-const alias = getEslintAlias();
 module.exports = {
   env: {
     es2021: true,
@@ -30,7 +29,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: alias,
+        map: getEslintAlias,
         extensions: ['.js', '.json'],
       },
     },
