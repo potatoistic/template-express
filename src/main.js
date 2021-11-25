@@ -1,4 +1,4 @@
-import env from './config/dotenv';
+import env from '@config/dotenv';
 import App from './app';
 
 const app = new App();
