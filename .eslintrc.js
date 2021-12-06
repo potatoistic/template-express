@@ -4,13 +4,14 @@ module.exports = {
   env: {
     es2021: true,
     node: true,
-    mocha: true,
+    jest: true,
   },
   extends: ['airbnb-base'],
   parserOptions: {
     ecmaVersion: 13,
     sourceType: 'module',
   },
+  plugins: ['jsdoc'],
   rules: {
     // enable dev depedencies for test files
     'import/no-extraneous-dependencies': [
@@ -24,6 +25,8 @@ module.exports = {
         ],
       },
     ],
+    // disabled no-used-vars for jsdoc
+    'jsdoc/no-undefined-types': 1,
   },
   ignorePatterns: ['temp/', 'node_modules/', 'dist/'],
   settings: {

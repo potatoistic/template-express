@@ -17,7 +17,6 @@ module.exports = (api) => {
       ],
     ],
     plugins: [
-      ['istanbul'],
       [
         'module-resolver',
         {

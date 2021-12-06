@@ -1,8 +1,11 @@
+import AuthService from './auth.service';
+
 export default class AuthController {
   #authService;
 
-  message = 'Hello World';
-
+  /**
+   * @param {AuthService} authService
+   */
   constructor(authService) {
     this.#authService = authService;
   }
