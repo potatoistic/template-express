@@ -28,7 +28,7 @@ module.exports = {
     // disabled no-used-vars for jsdoc
     'jsdoc/no-undefined-types': 1,
   },
-  ignorePatterns: ['temp/', 'node_modules/', 'dist/'],
+  ignorePatterns: ['.cache/', 'node_modules/', 'dist/', '*.config.js'],
   settings: {
     'import/resolver': {
       alias: {

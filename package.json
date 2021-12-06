@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "nodemon",
     "start": "node dist/main.js",
+    "build": "babel src --out-dir .cache",
     "build:prod": "babel src --out-dir dist",
-    "build:temp": "babel src --out-dir .temp",
     "lint": "eslint -f unix \"src/**/*.{js, jsx}\"",
     "test": "jest"
   },
@@ -27,16 +27,21 @@
   },
   "homepage": "https://github.com/dhruvsaxena1998/express-nodejs-template#readme",
   "dependencies": {
+    "@dolanites/utils": "^1.0.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "helmet": "^4.6.0"
+    "helmet": "^4.6.0",
+    "knex": "^0.95.14",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
     "@babel/node": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.2",
     "babel-plugin-module-resolver": "^4.1.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.3.0",
