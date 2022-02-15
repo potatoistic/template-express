@@ -12,6 +12,6 @@ export default class AuthController {
 
   login = async (req, res) => {
     const response = await this.#usersService.login(req.body);
-    res.send({ login: response });
+    res.send(response);
   };
 }

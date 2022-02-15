@@ -1,9 +1,9 @@
-import { Router as _Router } from 'express';
+import { Router } from 'express';
 
 import UserRouter from '@api/users/routes';
 
-const Router = _Router();
+const router = Router();
 
-Router.use('/auth', UserRouter);
+router.use('/auth', UserRouter);
 
-export default Router;
+export default router;

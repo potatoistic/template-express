@@ -23,11 +23,10 @@ export default class App {
     this.server.use(cors());
     this.server.use(helmet());
 
-    this.server.use('/api', routes);
-
-    // Temp route
-    this.server.get('/', (req, res) => {
-      res.send({ message: 'Hello World' });
+    this.server.get('/health', (req, res) => {
+      res.status(200).send({ message: 'Health Check' });
     });
+
+    this.server.use('/api', routes);
   }
 }

@@ -4,7 +4,8 @@
     "paths": {
       "@src/*": ["./src/*"],
       "@config/*": ["./src/config/*"],
-      "@api/*": ["./src/api/*"]
+      "@api/*": ["./src/api/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "exclude": ["node_modules", "**/node_modules/*"]

@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { env } from '@dolanites/utils';
+import { env } from '@utils/env-helper';
 
 // Configure dotenv
 dotenv.config();
